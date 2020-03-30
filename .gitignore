@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# PHP Config Files
+db.php
+
+# Python Config Files
+config.py
