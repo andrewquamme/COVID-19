@@ -1,0 +1,10 @@
+Started at 2020-03-30 12:19:40.117458
+US/States: 1437 records processed in 7 seconds
+Counties: 17731 records processed in 91 seconds
+Finished: 2020-03-30 12:21:19.542329
+
+Started at 2020-03-30 12:47:02.636212
+US/States: 1499 records processed in 8 seconds
+Counties: 19713 records processed in 104 seconds
+Finished: 2020-03-30 12:48:56.236378
+

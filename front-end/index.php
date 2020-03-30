@@ -47,6 +47,13 @@
     </div>
   </div>
 
+  <div id="footer">
+    <ul>
+      <li>Data from <a href="https://github.com/nytimes/covid-19-data" target="_blank">https://github.com/nytimes/covid-19-data</a></li>
+      <li><a href="https://github.com/andrewquamme/COVID-19/blob/master/README.md" target="_blank">README</a></li>
+    </ul>
+  </div>
+
   <script src="js/jquery.min.js"></script>
   <script src="js/Chart.min.js"></script>
   <script src="js/app.js"></script>

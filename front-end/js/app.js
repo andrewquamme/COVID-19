@@ -43,6 +43,7 @@ function showGraph(state, county) {
     var dates = [];
     var cases = [];
     var deaths = [];
+    var date = data[data.length-1].date;
 
     for (var i in data) {
       dates.push(data[i].date);
@@ -74,9 +75,9 @@ function showGraph(state, county) {
 
     if (chart) {
       chart.data = chartdata;
+      chart.options.title.text = `COVID-19 Data for ${location} as of ${date}`;
       chart.update();
-      chart.options.title.text = `COVID-19 Data ${location}`;
-      
+
     } else {
         chart = new Chart(graphTarget, {
           type: 'line',
@@ -85,7 +86,7 @@ function showGraph(state, county) {
             responsive: true,
             title: {
               display: true,
-              text: `COVID-19 Data ${location}`,
+              text: `COVID-19 Data for ${location} as of ${date}`,
             },
             scales: {
               yAxes: [{

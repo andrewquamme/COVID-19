@@ -1,27 +1,45 @@
 body {
-    width: 85%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
 
 }
+
 #content {overflow: auto}
 
-#chart-container {
+#content, #footer {
     margin: 1%;
 }
 
-#chart-options {
+#chart-options, #state-selection, #county-selection {
     width: 30%;
-    float: left;
-    margin: 1%;
-} 
-
-#state-selection, #county-selection {
-    width: 20%;
     float: left;
     margin: 1%;
 }
 
 #chart-container, #chart-options, #state-selection, #county-selection {
     margin-bottom: 1em;
+}
+
+#footer {
+    background-color: #efefef;
+    padding: .5em 0;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+a:link, a:visited { 
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+    text-decoration: underline;
 }
