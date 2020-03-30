@@ -23,7 +23,7 @@ Using `HTML`, `CSS`, `JS`, `JQuery` and `Chart.js` queries are sent to the `PHP`
 *NOTE: Because the actual data is used to populate the State/County select elements, there is a potential that a state/county will not be in the list when there are no reported cases.*
 
 ## REST API
-Endpoint: `http://10.0.0.10/covid/data/data.php`
+Endpoint: `http://k7asq.ham-radio-op.net/covid/data/data.php`
 
 ### Get List of States
 #### Request
