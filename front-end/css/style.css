@@ -1,0 +1,27 @@
+body {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+#content {overflow: auto}
+
+#chart-container {
+    margin: 1%;
+}
+
+#chart-options {
+    width: 30%;
+    float: left;
+    margin: 1%;
+} 
+
+#state-selection, #county-selection {
+    width: 20%;
+    float: left;
+    margin: 1%;
+}
+
+#chart-container, #chart-options, #state-selection, #county-selection {
+    margin-bottom: 1em;
+}
