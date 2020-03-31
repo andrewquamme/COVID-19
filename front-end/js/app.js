@@ -6,8 +6,8 @@ function populateStates() {
   $.get("./data/data.php", { query: "getStates"}, function (data) {
 
     var stateSel = $(".states").empty();
-    stateSel.append($('<option/>').html("--United States--").val("United States"));
     stateSel.append($('<option/>').html("--Veterans Affairs--").val("Veterans Affairs"));
+    stateSel.append($('<option/>').html("--United States--").val("United States"));
     for (var i in data){
       stateSel.append($('<option/>').html(data[i].state).val(data[i].state));
     }
@@ -104,7 +104,7 @@ function showGraph(state, county) {
 $(document).ready(function () {
   populateStates();
 
-  showGraph("United States","");
+  showGraph("Veterans Affairs","");
 
   $("select.states").change( function() {
     var selectedState = $(this).children("option:selected").val();
