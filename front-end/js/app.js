@@ -7,6 +7,7 @@ function populateStates() {
 
     var stateSel = $(".states").empty();
     stateSel.append($('<option/>').html("--United States--").val("United States"));
+    stateSel.append($('<option/>').html("--Veterans Affairs--").val("Veterans Affairs"));
     for (var i in data){
       stateSel.append($('<option/>').html(data[i].state).val(data[i].state));
     }

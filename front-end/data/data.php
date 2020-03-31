@@ -26,6 +26,11 @@ switch ($query) {
 			SELECT date, cases, deaths
 			FROM usa
 			ORDER BY date";
+		} elseif ($state == "Veterans Affairs") {
+			$sqlQuery = "
+				SELECT date, cases, deaths
+				FROM veterans
+				ORDER BY date";
 		} elseif ($county == "") {
 			$sqlQuery = "
 				SELECT date, cases, deaths
