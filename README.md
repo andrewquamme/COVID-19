@@ -74,7 +74,7 @@ Endpoint: `http://k7asq.ham-radio-op.net/covid/data/data.php`
 
 ### Get COVID-19 Data for State, United States, or Veterans Affairs
 #### Request
-`GET ?query=getData&state='State'` or `GET ?query=getData&state=United States` or `GET ?query=getData&state=Veterans Affairs`
+`GET ?query=getData&state='State'` or `GET ?query=getData&state='United States'` or `GET ?query=getData&state='Veterans Affairs'`
 #### Response
 ```
 [
