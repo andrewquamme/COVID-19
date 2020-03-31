@@ -4,7 +4,7 @@
 http://k7asq.ham-radio-op.net/covid/
 
 ## Data Sources
-https://github.com/nytimes/covid-19-data
+https://github.com/nytimes/covid-19-data 
 https://www.publichealth.va.gov/n-coronavirus/
 
 ## Purpose
