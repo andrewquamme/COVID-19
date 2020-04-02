@@ -1,0 +1,162 @@
+from bs4 import BeautifulSoup
+import requests
+import config
+import mysql.connector
+from datetime import datetime
+import time
+
+def get_soup(url):
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, features='html.parser')
+
+    html = open(f"{config.cwd}/VA/{time.strftime('%Y%m%d-%H%M')}.html", 'wb')
+    html.write(page.content)
+    html.close()
+
+    return soup
+
+
+def get_data(soup):
+    result = []
+    content = soup.find('div', attrs = {'id':'innerContentWrapper'})
+    findDate = 'ul ~ h3 ~ p'
+    findCases = 'h3 ~ p ~ p'
+    findDeaths = 'ul ~ p'
+
+    found = content.select(findDate)
+    for item in found:
+        if item.text[:10] == "Nationally":
+            result.append(get_date(item.text))
+            break
+
+    found = content.select(findCases)
+    for item in found:
+        if item.text[-22:] == "Positive Veteran Cases":
+            result.append(get_cases(item.text))
+            break
+
+    found = content.select(findDeaths)
+    for item in found:
+        if item.text[0:6] == "Deaths":
+            result.append(get_deaths(item.text))
+            break
+
+    return result
+
+
+def get_date(text):
+    i = 0
+    words = text.split(' ')
+    for word in words:
+        if is_month(word):
+            break
+        i+=1
+    return cleanup_date(words[i], words[i+1], words[i+2])
+
+
+def is_month(month):
+    months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+    ]
+
+    return month in months
+
+
+def cleanup_date(month, day, year):
+    months = {
+        "January": "01",
+        "February": "02",
+        "March": "03",
+        "April": "04",
+        "May": "05",
+        "June": "06",
+        "July": "07",
+        "August": "08",
+        "September": "09",
+        "October": "10",
+        "November": "11",
+        "December": "12",
+    }
+
+    mm = months[month]
+    dd = day.replace(',', '')
+    yyyy = year.replace(',', '')
+    
+    return f"{yyyy}/{mm}/{dd}"
+
+
+def get_cases(text):
+    return int(text.split('\xa0')[0].replace(',', ''))
+
+
+def get_deaths(text):
+    return int(text.split(' ')[1])
+
+
+def check_if_in_db(data):
+    mydb = mysql.connector.connect(**config.mysql)
+    cursor = mydb.cursor()
+
+    sql = ("SELECT date "
+        "FROM veterans "
+        f"WHERE date = '{data[0]}'")
+    
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    cursor.close()
+    mydb.close()
+    if len(results) == 0:
+        return False
+    return True
+    
+
+def add_to_db(entry):
+    mydb = mysql.connector.connect(**config.mysql)
+    cursor = mydb.cursor()
+
+    sql = ("INSERT INTO veterans "
+        "(date, cases, deaths) "
+        "VALUES (%s, %s, %s)")
+    val = (entry[0], entry[1], entry[2])
+
+    cursor.execute(sql, val)
+    mydb.commit()
+    cursor.close()
+    mydb.close()
+
+
+def main():
+    log = open(f"{config.cwd}/log.txt", 'a+')
+    log.write(f"Veterans started at {datetime.now()}\n")
+
+    url = 'https://www.publichealth.va.gov/n-coronavirus/'
+    soup = get_soup(url)
+    
+    data = get_data(soup)
+
+    try:
+        if not check_if_in_db(data):
+            add_to_db(data)
+            log.write(f"Record added: {data}\n")
+        else:
+            log.write(f"0 records added\n")
+    except:
+        log.write(f"DB error on: {data}\n")
+
+    log.write(f"Finished: {datetime.now()}\n\n")
+    log.close()
+    
+
+if __name__ == "__main__":
+    main()

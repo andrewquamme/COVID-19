@@ -8,3 +8,171 @@ US/States: 1499 records processed in 8 seconds
 Counties: 19713 records processed in 104 seconds
 Finished: 2020-03-30 12:48:56.236378
 
+Started at 2020-03-30 14:05:01.727958
+US/States: 1499 records processed in 9 seconds
+Counties: 19713 records processed in 100 seconds
+Finished: 2020-03-30 14:06:51.686126
+
+Started at 2020-03-30 16:05:02.039383
+US/States: 1499 records processed in 8 seconds
+Counties: 19713 records processed in 114 seconds
+Finished: 2020-03-30 16:07:04.917909
+
+Started at 2020-03-30 18:05:01.449865
+US/States: 1499 records processed in 8 seconds
+Counties: 19713 records processed in 105 seconds
+Finished: 2020-03-30 18:06:55.099284
+
+Started at 2020-03-30 20:05:01.500847
+US/States: 1499 records processed in 9 seconds
+Counties: 19713 records processed in 99 seconds
+Finished: 2020-03-30 20:06:50.559263
+
+Started at 2020-03-31 08:05:01.453856
+US/States: 1554 records processed in 8 seconds
+Counties: 21799 records processed in 128 seconds
+Finished: 2020-03-31 08:07:18.900157
+
+Started at 2020-03-31 10:05:01.156248
+US/States: 1554 records processed in 9 seconds
+Counties: 21799 records processed in 128 seconds
+Finished: 2020-03-31 10:07:19.693636
+
+Started at 2020-03-31 12:05:01.110300
+US/States: 1554 records processed in 9 seconds
+Counties: 21799 records processed in 115 seconds
+Finished: 2020-03-31 12:07:06.092407
+
+Started at 2020-03-31 14:05:01.639226
+US/States: 1554 records processed in 9 seconds
+Counties: 21799 records processed in 115 seconds
+Finished: 2020-03-31 14:07:06.826306
+
+Started at 2020-03-31 16:05:01.263077
+US/States: 1554 records processed in 9 seconds
+Counties: 21799 records processed in 108 seconds
+Finished: 2020-03-31 16:06:59.317096
+
+Started at 2020-03-31 18:05:01.810404
+US/States: 1554 records processed in 8 seconds
+Counties: 21799 records processed in 128 seconds
+Finished: 2020-03-31 18:07:18.093771
+
+Started at 2020-03-31 20:05:01.701932
+US/States: 1554 records processed in 9 seconds
+Counties: 21799 records processed in 109 seconds
+Finished: 2020-03-31 20:07:00.590010
+
+Started at 2020-04-01 08:05:01.429245
+US/States: 1554 records processed in 8 seconds
+Counties: 21799 records processed in 115 seconds
+Finished: 2020-04-01 08:07:05.395647
+
+Veterans started at 2020-04-01 08:59:22.067312
+Finished: 2020-04-01 08:59:22.731864
+
+Veterans started at 2020-04-01 09:00:51.640033
+0 records added
+Finished: 2020-04-01 09:00:52.424179
+
+Veterans started at 2020-04-01 09:04:45.032724
+Record added: ['2020/03/31', 1347, 41]
+Finished: 2020-04-01 09:04:45.764040
+
+Veterans started at 2020-04-01 09:14:55.820059
+Veterans started at 2020-04-01 09:15:37.599964
+Veterans started at 2020-04-01 09:17:25.111301
+Veterans started at 2020-04-01 09:18:20.625912
+Veterans started at 2020-04-01 09:20:15.352631
+0 records added
+Finished: 2020-04-01 09:20:16.209957
+
+Veterans started at 2020-04-01 09:20:51.138991
+0 records added
+Finished: 2020-04-01 09:20:51.860285
+
+Veterans started at 2020-04-01 09:45:35.212542
+0 records added
+Finished: 2020-04-01 09:45:36.100526
+
+Veterans started at 2020-04-01 10:05:01.995829
+0 records added
+Finished: 2020-04-01 10:05:02.780319
+
+Started at 2020-04-01 10:05:01.808477
+US/States: 1609 records processed in 10 seconds
+Counties: 23967 records processed in 124 seconds
+Finished: 2020-04-01 10:07:16.341083
+
+Veterans started at 2020-04-01 12:05:02.307994
+Record added: ['2020/04/1', 1602, 53]
+Finished: 2020-04-01 12:05:03.123882
+
+Started at 2020-04-01 12:05:02.056915
+US/States: 1609 records processed in 8 seconds
+Counties: 23967 records processed in 141 seconds
+Finished: 2020-04-01 12:07:32.131136
+
+Veterans started at 2020-04-01 14:05:01.726673
+0 records added
+Finished: 2020-04-01 14:05:02.659599
+
+Started at 2020-04-01 14:05:01.493583
+US/States: 1609 records processed in 8 seconds
+Counties: 23967 records processed in 121 seconds
+Finished: 2020-04-01 14:07:11.710071
+
+Veterans started at 2020-04-01 16:05:01.569988
+0 records added
+Finished: 2020-04-01 16:05:02.356029
+
+Started at 2020-04-01 16:05:01.343915
+US/States: 1609 records processed in 8 seconds
+Counties: 23967 records processed in 122 seconds
+Finished: 2020-04-01 16:07:12.177677
+
+Veterans started at 2020-04-01 18:05:01.817609
+0 records added
+Finished: 2020-04-01 18:05:02.682621
+
+Started at 2020-04-01 18:05:01.619140
+US/States: 1609 records processed in 9 seconds
+Counties: 23967 records processed in 139 seconds
+Finished: 2020-04-01 18:07:30.920074
+
+Veterans started at 2020-04-01 20:05:01.925769
+0 records added
+Finished: 2020-04-01 20:05:02.792212
+
+Started at 2020-04-01 20:05:01.675605
+US/States: 1609 records processed in 8 seconds
+Counties: 23967 records processed in 120 seconds
+Finished: 2020-04-01 20:07:10.872659
+
+Veterans started at 2020-04-02 08:05:02.192407
+0 records added
+Finished: 2020-04-02 08:05:03.023035
+
+Started at 2020-04-02 08:05:02.008538
+US/States: 1664 records processed in 10 seconds
+Counties: 26199 records processed in 136 seconds
+Finished: 2020-04-02 08:07:28.225202
+
+Veterans started at 2020-04-02 10:05:01.906184
+0 records added
+Finished: 2020-04-02 10:05:02.663524
+
+Started at 2020-04-02 10:05:01.672071
+US/States: 1664 records processed in 9 seconds
+Counties: 26199 records processed in 133 seconds
+Finished: 2020-04-02 10:07:24.122674
+
+Veterans started at 2020-04-02 12:05:01.705294
+Record added: ['2020/04/2', 1921, 68]
+Finished: 2020-04-02 12:05:02.441792
+
+Started at 2020-04-02 12:05:01.522812
+US/States: 1664 records processed in 10 seconds
+Counties: 26199 records processed in 140 seconds
+Finished: 2020-04-02 12:07:31.848409
+

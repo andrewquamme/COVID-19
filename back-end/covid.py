@@ -78,11 +78,11 @@ def add_to_db(table, entries, log):
     mydb.close()
 
 def main():
-    log = open('/home/andrew/dev/covid/log.txt', 'a+')
+    log = open(f"{config.cwd}/log.txt", 'a+')
     log.write(f"Started at {datetime.now()}\n")
 
     start = datetime.now()
-    states = parse_data("/home/andrew/dev/covid/us-states.csv")
+    states = parse_data(f"{config.cwd}/us-states.csv")
     add_to_db("states", states, log)
     usa = calc_usa_numbers(states)
     add_to_db("usa", usa, log)
@@ -90,7 +90,7 @@ def main():
     log.write(f"US/States: {len(states)} records processed in {(stop-start).seconds} seconds\n")
 
     start = datetime.now()
-    counties = parse_data("/home/andrew/dev/covid/us-counties.csv")
+    counties = parse_data(f"{config.cwd}/us-counties.csv")
     add_to_db("counties", counties, log)
     stop = datetime.now()
     log.write(f"Counties: {len(counties)} records processed in {(stop-start).seconds} seconds\n")
